@@ -9,11 +9,14 @@ using UnityEngine.UI;
 public class NetPlayerHealth : NetworkBehaviour {
 
 	public float maxHealth = 100f;
+    public float maxArmor = 50f;
 
 	NetPlayer player;
 	public float health;
+    public float armor;
 
 	public Text healthText;
+    public Text armorText;
 
 	public Image damageImage;
 	public Color damageColor = new Color (1f, 0f, 0f, 0.2f);
@@ -76,7 +79,9 @@ public class NetPlayerHealth : NetworkBehaviour {
 	void OnEnable () {
 		damageImage.color = Color.clear;
 		health = maxHealth;
+        armor = maxArmor;
 		healthText.text = health.ToString ();
+        armorText.text = armor.ToString();
 		anim.SetTrigger ("Alive");
 		// Si se trata del jugador local
 		// normalmente, esto se disparará en el momento de hacer respawn
@@ -108,8 +113,17 @@ public class NetPlayerHealth : NetworkBehaviour {
 		if (health <= 0) {
 			return died;
 		}
-		// Si está vivo, le hacemos daño
-		health -= damage;
+
+        if (armor <= 0)
+        {
+            // Si está vivo, le hacemos daño
+            health -= damage;
+        } else
+        {
+            armor -= damage;
+        }
+		
+		
 		// Guardamos el la variabl ebool si el jugador ha muerto tras el impacto
 		died = health <= 0;
 		// Si está muerto, activamos el trigger del animator para muerte
@@ -120,7 +134,7 @@ public class NetPlayerHealth : NetworkBehaviour {
 			GetComponent<Score> ().deads++;
 		}
 		// Si ha muerto por el impacto, informo a todas las instancias del jugador
-		RpcTakeDamage (died, health);
+		RpcTakeDamage (died, health, armor);
 		// Devuelvo si el jugador ha muerto por el impacto
 		return died;
 	}
@@ -130,7 +144,7 @@ public class NetPlayerHealth : NetworkBehaviour {
 	/// Informamos al resto de instancias si el jugador ha muerto, dependiendo del parámetro
 	/// </summary>
 	/// <param name="died">If set to <c>true</c> died.</param>
-	void RpcTakeDamage(bool died, float actualHealth) {
+	void RpcTakeDamage(bool died, float actualHealth, float actualArmor) {
 		if (died) {
 			// Ejecutamos el método die, que desactivará al jugador y preparará el respawn
 			player.Die ();
@@ -139,8 +153,10 @@ public class NetPlayerHealth : NetworkBehaviour {
 			// Activamos la imagen de daño cuando se recibe daño
 			damaged = true;
 			health = actualHealth;
+            armor = actualArmor;
 			healthText.text = health.ToString ();
-		}
+            armorText.text = armor.ToString();
+        }
 	}
 
 	[Server]
