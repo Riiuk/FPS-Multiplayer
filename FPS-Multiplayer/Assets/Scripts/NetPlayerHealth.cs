@@ -97,8 +97,44 @@ public class NetPlayerHealth : NetworkBehaviour {
 		}
 	}
 
-	// Solo el servidor ejecutará el siguiente método
-	[Server]
+    [Server]
+    public void TakeHealth(float value)
+    {
+        health += value;
+        if (health > maxHealth)
+        {
+            health = maxHealth;
+        }
+        RpcTakeHealth(health);
+    }
+
+    [Server]
+    public void TakeArmor(float value)
+    {
+        armor += value;
+        if (armor > maxArmor)
+        {
+            armor = maxArmor;
+        }
+        RpcTakeArmor(armor);
+    }
+
+    [ClientRpc]
+    void RpcTakeHealth(float actualHealth)
+    {
+        health = actualHealth;
+        healthText.text = health.ToString();
+    }
+
+    [ClientRpc]
+    void RpcTakeArmor(float actualArmor)
+    {
+        armor = actualArmor;
+        armorText.text = armor.ToString();
+    }
+
+    // Solo el servidor ejecutará el siguiente método
+    [Server]
 	/// <summary>
 	/// Aplica el daño recibido como parámetro, devolverá true si el jugador muere
 	/// </summary>
@@ -116,6 +152,7 @@ public class NetPlayerHealth : NetworkBehaviour {
 
         if (armor <= 0)
         {
+            armor = 0f;
             // Si está vivo, le hacemos daño
             health -= damage;
         } else
