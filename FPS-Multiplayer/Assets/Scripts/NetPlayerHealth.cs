@@ -26,6 +26,8 @@ public class NetPlayerHealth : NetworkBehaviour {
 	public float stunned;
 	// Referencia al texto de stunt
 	public Text stunnedText;
+
+    public bool godMode = false;
 	// Referencia al FPSController, para desactivarlo cuando el jugador se encuentre stuneado
 	NetFPSController fpsController;
 	// Referencia al NetShoot, para desactivarlo cuando el jguador se encuentre stuneado
@@ -66,13 +68,12 @@ public class NetPlayerHealth : NetworkBehaviour {
 				}
 			}
 		}
-
 		if (damaged) {
 			damageImage.color = damageColor;
 		} else {
 			damageImage.color = Color.Lerp (damageImage.color, Color.clear, Time.deltaTime);
 		}
-		damaged = false;
+        damaged = false;
 	}
 
 	// Use this for initialization
@@ -141,7 +142,8 @@ public class NetPlayerHealth : NetworkBehaviour {
 	/// <returns><c>true</c>, if damage was taken, <c>false</c> otherwise.</returns>
 	/// <param name="damage">Damage.</param>
 	public bool TakeDamage(float damage) {
-		// Consideramos inicialmente que el jugador no está muerto
+        
+        // Consideramos inicialmente que el jugador no está muerto
 		bool died = false;
 
 		// Verificamos que el jugador no esté previamente muerto
@@ -150,19 +152,21 @@ public class NetPlayerHealth : NetworkBehaviour {
 			return died;
 		}
 
-        if (armor <= 0)
+        if (!godMode)
         {
-            armor = 0f;
-            // Si está vivo, le hacemos daño
-            health -= damage;
-        } else
-        {
-            armor -= damage;
+            if (armor <= 0)
+            {
+                armor = 0f;
+                // Si está vivo, le hacemos daño
+                health -= damage;
+            } else
+            {
+                armor -= damage;
+            }
         }
-		
-		
-		// Guardamos el la variabl ebool si el jugador ha muerto tras el impacto
-		died = health <= 0;
+
+        // Guardamos el la variabl ebool si el jugador ha muerto tras el impacto
+        died = health <= 0;
 		// Si está muerto, activamos el trigger del animator para muerte
 		if (died) {
 			anim.SetTrigger ("Dead");
@@ -174,7 +178,8 @@ public class NetPlayerHealth : NetworkBehaviour {
 		RpcTakeDamage (died, health, armor);
 		// Devuelvo si el jugador ha muerto por el impacto
 		return died;
-	}
+    
+    }
 
 	[ClientRpc]
 	/// <summary>

@@ -22,11 +22,15 @@ public class NetSkillSprint : NetworkBehaviour
 
 
     private NetFPSController netFPSController;
+    private NetWeaponShoot netWeaponShoot;
+    private NetPlayerHealth netPlayerHealth;
 
 
     void Start()
     {
-        netFPSController = GetComponent<NetFPSController>();    
+        netFPSController = GetComponent<NetFPSController>();
+        netWeaponShoot = GetComponentInChildren<NetWeaponShoot>();
+        netPlayerHealth = GetComponent<NetPlayerHealth>();
     }
 
     // Update is called once per frame
@@ -62,6 +66,10 @@ public class NetSkillSprint : NetworkBehaviour
     {
         // Llamamos a la corrutina que se encarga de aumentarnos la duración del sprint y resetearla
         StartCoroutine("RunMultipler");
+        // Aplicamos el stunt al arma
+        StartCoroutine("ApplyStunt");
+        // Aplicamos el godmode
+        StartCoroutine("GodMode");
         // Ponemos el contador de tiempo de coolDown al valor definido
         coolDownTimer = coolDown;
         // Activamos los efectos de la habilidad
@@ -99,6 +107,20 @@ public class NetSkillSprint : NetworkBehaviour
         netFPSController.speed *= speedMultipler;
         yield return new WaitForSeconds(duration);
         netFPSController.speed /= speedMultipler;
+    }
+
+    IEnumerator ApplyStunt()
+    {
+        netWeaponShoot.shootStunt = true;
+        yield return new WaitForSeconds(duration);
+        netWeaponShoot.shootStunt = false;
+    }
+
+    IEnumerator GodMode()
+    {
+        netPlayerHealth.godMode = true;
+        yield return new WaitForSeconds(duration);
+        netPlayerHealth.godMode = false;
     }
 
 }

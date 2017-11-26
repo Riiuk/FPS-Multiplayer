@@ -16,8 +16,10 @@ public class NetWeaponShoot : MonoBehaviour {
 	// Variable en la que guardamos cuando podremos realizar el siguiente disparo
 	private float nextTimeToShoot = 0f;
 
-	// Tamaño del cargador
-	public int magazineSize = 15;
+    public bool shootStunt = false;
+    public float stuntDuration = 1f;
+    // Tamaño del cargador
+    public int magazineSize = 15;
 	// Cargador actual
 	public int magazine;
 
@@ -126,8 +128,16 @@ public class NetWeaponShoot : MonoBehaviour {
 			NetPlayerHealth enemy = hitInfo.transform.GetComponent<NetPlayerHealth> ();
 			// Si dispone de el, significará que es otro jguador, así que le aplico el daño del arma
 			if (enemy != null) {
-				// El método TakeDamage devuelve true, si somos nosotros los que lo hemos matado
-				if (enemy.TakeDamage (damage)) {
+
+                // Si el disparo debe stunear
+                if (shootStunt)
+                {
+                    // Llamamos a la función del enemigo de ser stuneado con la duración preestablecida
+                    enemy.TakeStunt(stuntDuration);
+                }
+
+                // El método TakeDamage devuelve true, si somos nosotros los que lo hemos matado
+                if (enemy.TakeDamage (damage)) {
 					// Incrementamos el número de muertes
 					GetComponentInParent<Score> ().kills++;
 				}
