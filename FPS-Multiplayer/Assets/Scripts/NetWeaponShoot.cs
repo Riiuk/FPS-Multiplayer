@@ -17,6 +17,7 @@ public class NetWeaponShoot : MonoBehaviour {
 	private float nextTimeToShoot = 0f;
 
     public bool shootStunt = false;
+    public bool unlimitedAmmo = false;
     public float stuntDuration = 1f;
     // Tamaño del cargador
     public int magazineSize = 15;
@@ -144,11 +145,13 @@ public class NetWeaponShoot : MonoBehaviour {
 			}
 		}
 
-		// Tras realizar el disparo, reducimos la bala en el cargador
-		magazine--;
-
-		UpdateAmmoDisplay ();
-
+        if (!unlimitedAmmo)
+        {
+            // Tras realizar el disparo, reducimos la bala en el cargador
+            magazine--;
+            UpdateAmmoDisplay();
+        }
+		
 	}
 
 
@@ -172,6 +175,13 @@ public class NetWeaponShoot : MonoBehaviour {
 	}
 
 	public void UpdateAmmoDisplay() {
-			magazineText.text = magazine.ToString () + "  " + "/" + "  " + magazineSize.ToString ();
+        if (!unlimitedAmmo)
+        {
+            magazineText.text = magazine.ToString() + "  " + "/" + "  " + magazineSize.ToString();
+        } else
+        {
+            magazineText.text = "∞ / ∞";
+        }
+			
 	}
 }
