@@ -109,6 +109,10 @@ public class NetSkillRougeFlame : NetworkBehaviour
         spearEffect.SetActive(false);
     }
 
+    /// <summary>
+    /// Activa y desactiva el GodMode
+    /// </summary>
+    /// <returns></returns>
     IEnumerator GodMode()
     {
         netPlayerHealth.godMode = true;
@@ -116,6 +120,10 @@ public class NetSkillRougeFlame : NetworkBehaviour
         netPlayerHealth.godMode = false;
     }
 
+    /// <summary>
+    /// Activa y desactiva el daño en el arma
+    /// </summary>
+    /// <returns></returns>
     IEnumerator FireSpear()
     {
         // Variable temporal que almacena la cadencia de disparo default
