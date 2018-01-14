@@ -18,6 +18,12 @@ public class NetWeaponShoot : MonoBehaviour {
 
     public bool shootStunt = false;
     public bool unlimitedAmmo = false;
+
+    public bool GrenadeLauncher = false;
+    public GameObject grenadePref;
+    public Transform grenadeHolder;
+    public float fuerzaDisparo = 40f;
+
     public float stuntDuration = 1f;
     // Tamaño del cargador
     public int magazineSize = 15;
@@ -69,20 +75,24 @@ public class NetWeaponShoot : MonoBehaviour {
 	/// Será llamado mediante Message por el objeto padre Player. TOdas las armas
 	/// deberían tener un método con el mismo nombre para poder ser disparadas.
 	/// </summary>
-	public void CallShoot(Vector3 direction) {
-
+	public void CallShoot(Vector3 direction)
+    {
+        if (!GrenadeLauncher)
+        {
 		// Si aún no podemos disparar, salimos del método
-		if (Time.time < nextTimeToShoot) {
-			return;
+		if (Time.time < nextTimeToShoot)
+        {
+		return;
 		}
 
 		// Calculamos el momento en el que el jugador podrá volver a disparar
 		nextTimeToShoot = Time.time + shootDelay;
 
 		// Si no quedan balas, emitimos un sonido especial de aviso y salimos del método.
-		if (magazine <= 0) {
-			audioSource.PlayOneShot (noAmmoSound);
-			return;
+		if (magazine <= 0)
+        {
+		audioSource.PlayOneShot (noAmmoSound);
+		return;
 		}
 
 		// Efecto de particulas del arma
@@ -151,8 +161,43 @@ public class NetWeaponShoot : MonoBehaviour {
             magazine--;
             UpdateAmmoDisplay();
         }
-		
-	}
+        } else
+        {
+            // Si aún no podemos disparar, salimos del método
+            if (Time.time < nextTimeToShoot)
+            {
+                return;
+            }
+
+            // Calculamos el momento en el que el jugador podrá volver a disparar
+            nextTimeToShoot = Time.time + shootDelay;
+
+            // Si no quedan balas, emitimos un sonido especial de aviso y salimos del método.
+            if (magazine <= 0)
+            {
+                audioSource.PlayOneShot(noAmmoSound);
+                return;
+            }
+
+            // Efecto de particulas del arma
+            shootParticles.Play();
+            // Efecto de sonido del arma
+            audioSource.Play();
+            // Animación de disparo
+            animator.SetTrigger("Shoot");
+
+            GameObject granada = Instantiate(grenadePref, transform.position, transform.rotation);
+            Rigidbody rb = granada.GetComponent<Rigidbody>();
+            rb.AddForce(transform.forward * fuerzaDisparo, ForceMode.VelocityChange);
+
+            if (!unlimitedAmmo)
+            {
+                // Tras realizar el disparo, reducimos la bala en el cargador
+                magazine--;
+                UpdateAmmoDisplay();
+            }
+        }
+    }
 
 
 	/// <summary>

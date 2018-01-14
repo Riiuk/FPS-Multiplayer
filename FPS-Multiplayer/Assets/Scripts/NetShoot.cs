@@ -10,6 +10,11 @@ public class NetShoot : NetworkBehaviour {
 
 	public bool canShoot = false;
 
+    public bool grenadeLauncher = false;
+    public GameObject grenadePrefab;
+    public Transform grenadeHolder;
+    public float fuerzaDisparo = 100f;
+
 	 // Referencia del player que será utilizada como origen del RayCast de disparo
 	 // Usaremos el transform del objeto Head, ya que la cámara será desactivada
 	public Transform firePosition;
@@ -75,7 +80,14 @@ public class NetShoot : NetworkBehaviour {
 	// Los ClientRpc hacen que las instancias de los clientes ejecuten acciones
 	[ClientRpc]
 	void RpcShoot (Vector3 direction) {
-		BroadcastMessage ("CallShoot", direction);
+        if (!grenadeLauncher)
+        {
+            BroadcastMessage("CallShoot", direction);
+        } else
+        {
+            BroadcastMessage("CallShoot", direction);
+        }
+		
 	}
 	// Le decimos al cliente que recargamos
 	[ClientRpc]

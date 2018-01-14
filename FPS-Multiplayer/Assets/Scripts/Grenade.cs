@@ -11,6 +11,7 @@ public class Grenade : MonoBehaviour {
     [Header("Explosión")]
     public float radio = 5f;
     public float fuerzaExplosion = 700f;
+    public float daño = 50f;
 
     [Header("Prefabs")]
     [Tooltip("Prefab del ParticleSystem")]
@@ -58,15 +59,29 @@ public class Grenade : MonoBehaviour {
 
         foreach (Collider objetoEnRango in collidersMover) {
 
-            Rigidbody rb = objetoEnRango.GetComponent<Rigidbody>();
+            NetPlayerHealth enemy = objetoEnRango.GetComponent<NetPlayerHealth>();
 
-            if (rb != null) {
-
-                rb.AddExplosionForce(fuerzaExplosion, transform.position, radio);
+            if (enemy != null)
+            {
+                
+                // El método TakeDamage devuelve true, si somos nosotros los que lo hemos matado
+                if (enemy.TakeDamage(daño))
+                {
+                    // Incrementamos el número de muertes
+                    GetComponentInParent<Score>().kills++;
+                }
             }
         }
 
         Destroy(gameObject);
+    }
+
+    void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.tag == "Player" && !haExplotado)
+        {
+            Explotar();
+        }    
     }
 
     /// <summary>
