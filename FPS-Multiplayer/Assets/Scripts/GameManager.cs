@@ -10,11 +10,15 @@ public class GameManager : MonoBehaviour {
 	public string playerName;
 	// Referencia al campo de texto donde mostraremos las puntuaciones
 	public Text scoreText;
+    public Text scoreKillsText;
+    public Text scoreDeadsText;
 
 	public bool pause;
 
 	// Texto que será mostrado en el score
 	private string score;
+    private string scoreKills;
+    private string scoreDeads;
 
 	public static GameManager GM;
 
@@ -50,6 +54,8 @@ public class GameManager : MonoBehaviour {
 	/// Actualiza el score revisando la puntuación de cada jugador en la partida
 	/// </summary>
 	public void UpdateScore() {
+
+        /*
 		score = "Player \t\t\t\t Kills \t Deads \n";
 
 		// Recorro todos los jugadores en la escena, para generar el texto de score,
@@ -60,7 +66,25 @@ public class GameManager : MonoBehaviour {
 		}
 
 		scoreText.text = score;
-	}
+        */
+
+        score = "";
+        scoreKills = "";
+        scoreDeads = "";
+
+        foreach (var player in GameObject.FindGameObjectsWithTag("Player"))
+        {
+            Score tempScore = player.GetComponent<Score>();
+            score += tempScore.playerName + "\n";
+            scoreKills += tempScore.kills + "\n";
+            scoreDeads += tempScore.deads + "\n";
+        }
+
+        scoreText.text = score;
+        scoreKillsText.text = scoreKills;
+        scoreDeadsText.text = scoreDeads;
+
+    }
 
 	public void ExitGame() {
 		Application.Quit ();
