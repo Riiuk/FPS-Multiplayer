@@ -84,7 +84,7 @@ public class NetFPSController : MonoBehaviour {
 		player = GetComponent<CharacterController> ();
 
 		audioSource = GetComponent<AudioSource> ();
-	}
+    }
 
 	// Update is called once per frame
 	void Update () {
@@ -168,6 +168,8 @@ public class NetFPSController : MonoBehaviour {
 		if (stepDistanceCounter >= stepDistance && !slowing) {
 			// Reiniciamos el contador
 			stepDistanceCounter = 0f;
+
+            
 			// reproducimos el sonido de un paso
 			audioSource.PlayOneShot (stepSound);
 		}

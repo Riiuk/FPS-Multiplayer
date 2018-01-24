@@ -13,6 +13,7 @@ public class NetSkillRevgoD : NetworkBehaviour
 
     public Image crosshair;
     public GameObject scopeOverlay;
+    public Camera cam;
     public GameObject rifle;
     public MeshRenderer rightHand;
     public MeshRenderer leftHand;
@@ -139,6 +140,7 @@ public class NetSkillRevgoD : NetworkBehaviour
         rifle.SetActive(true);
         rightHand.enabled = true;
         leftHand.enabled = true;
+        cam.fieldOfView = 60f;
     }
 
     IEnumerator OnScope()
@@ -148,5 +150,6 @@ public class NetSkillRevgoD : NetworkBehaviour
         leftHand.enabled = false;
         rifle.SetActive(false);
         scopeOverlay.SetActive(true);
+        cam.fieldOfView = 15f;
     }
 }
