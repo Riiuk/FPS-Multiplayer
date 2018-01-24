@@ -49,6 +49,10 @@ public class Network : MonoBehaviour {
 		networkManager.StartHost ();
 		// Indico al GameManager como se va a llamar el jugador
 		GameManager.GM.playerName = playerName.text;
+
+        GameManager.GM.SetKillsToWin();
+
+        AudioManager.instance.Stop("MainTheme");
 	}
 
 	/// <summary>
@@ -67,7 +71,9 @@ public class Network : MonoBehaviour {
 		networkManager.StartClient ();
 		// Indico al GameManager como se va a llamar el jugador
 		GameManager.GM.playerName = playerName.text;
-	}
+
+        AudioManager.instance.Stop("MainTheme");
+    }
 
 	/// <summary>
 	/// Abandona el servidor si es cliente. Cierra el servidor si es host

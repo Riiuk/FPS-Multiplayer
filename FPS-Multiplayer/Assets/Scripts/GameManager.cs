@@ -5,13 +5,21 @@ using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour {
 
+    public int killsToWin = 2;
+    public InputField killsToWinField;
+
 	public GameObject gameMenu;
+    public GameObject finalMenu;
 
 	public string playerName;
 	// Referencia al campo de texto donde mostraremos las puntuaciones
 	public Text scoreText;
     public Text scoreKillsText;
     public Text scoreDeadsText;
+
+    public Text killsToWinText;
+
+    public Text finalMenssage;
 
 	public bool pause;
 
@@ -20,6 +28,8 @@ public class GameManager : MonoBehaviour {
     private string scoreKills;
     private string scoreDeads;
 
+    private string killsToWinString;
+
 	public static GameManager GM;
 
 	void Awake() {
@@ -27,21 +37,23 @@ public class GameManager : MonoBehaviour {
 			GM = GetComponent<GameManager> ();
 		}
 	}
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
 
-	/// <summary>
-	/// Muestra/oculta el menú de juego
-	/// </summary>
-	/// <param name="show">If set to <c>true</c> show.</param>
-	public void GameMenu(bool show) {
+    void Start()
+    {
+        finalMenssage.text = "";
+        finalMenu.SetActive(false);    
+    }
+
+    void Update()
+    {
+        WinMatch();
+    }
+
+    /// <summary>
+    /// Muestra/oculta el menú de juego
+    /// </summary>
+    /// <param name="show">If set to <c>true</c> show.</param>
+    public void GameMenu(bool show) {
 		
 		if (show) {
 			UpdateScore ();
@@ -83,7 +95,33 @@ public class GameManager : MonoBehaviour {
         scoreText.text = score;
         scoreKillsText.text = scoreKills;
         scoreDeadsText.text = scoreDeads;
+    }
 
+    public void WinMatch()
+    {
+        foreach (var player in GameObject.FindGameObjectsWithTag("Player"))
+        {
+            Score tempScore = player.GetComponent<Score>();
+            if (tempScore.kills >= killsToWin)
+            {
+                Cursor.lockState = CursorLockMode.None;
+                finalMenssage.text = "EL JUGADOR " + tempScore.playerName + " HA GANADO LA RONDA. PERO HA MUERTO " + tempScore.deads + " VECES.";
+                finalMenu.SetActive(true);
+                StartCoroutine("FinishMatch");
+            }
+        }
+    }
+
+    IEnumerator FinishMatch()
+    {
+        GameObject sceneFader = GameObject.FindGameObjectWithTag("SceneFader");
+        yield return new WaitForSeconds(5f);
+        sceneFader.GetComponent<SceneFader>().FadeTo("Menu");
+    }
+
+    public void SetKillsToWin()
+    {
+        killsToWin = int.Parse (killsToWinField.text);
     }
 
 	public void ExitGame() {
