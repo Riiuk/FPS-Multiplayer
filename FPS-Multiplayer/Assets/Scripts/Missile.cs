@@ -19,8 +19,6 @@ public class Missile : MonoBehaviour
     [Header("Prefabs")]
     [Tooltip("Prefab del Sistema de Particulas para la explosion")]
     public GameObject prefabExplosionEffect;
-    // Variable que usamos para avisar de que la granada ya ha explotado
-    bool haExplotado = false;
 
     private Rigidbody rb;
 
@@ -36,8 +34,6 @@ public class Missile : MonoBehaviour
 
     void Explotar()
     {
-        haExplotado = true;
-
         Instantiate(prefabExplosionEffect, transform.position, transform.rotation);
 
         Collider[] collidersDestruir = Physics.OverlapSphere(transform.position, radio);

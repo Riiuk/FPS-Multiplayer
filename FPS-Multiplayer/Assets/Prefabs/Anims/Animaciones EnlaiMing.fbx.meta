@@ -1,0 +1,387 @@
+fileFormatVersion: 2
+guid: ac0411287a649544abf0e70f83080b93
+timeCreated: 1516880542
+licenseType: Free
+ModelImporter:
+  serializedVersion: 21
+  fileIDToRecycleName:
+    100000: Abdomen_002
+    100002: Ala.l
+    100004: Ala.l_end
+    100006: Ala.r
+    100008: Ala.r_end
+    100010: //RootNode
+    100012: anular_001.l
+    100014: anular_001.r
+    100016: anular_002.l
+    100018: anular_002.r
+    100020: anular_003.l
+    100022: anular_003.l_end
+    100024: anular_003.r
+    100026: anular_003.r_end
+    100028: Arma EnlaiMing
+    100030: Arma_001
+    100032: Bone.012
+    100034: Bone.013
+    100036: Bone.016
+    100038: Bone.017
+    100040: Bone.018
+    100042: Bone.018_end
+    100044: brazo_002.l
+    100046: brazo_002.r
+    100048: 'BrazoDerecho EnlaiMing '
+    100050: 'BrazoIzquierdo EnlaiMing '
+    100052: cabeza_001
+    100054: CabezaElemento
+    100056: Caderas_003
+    100058: codo_001.l
+    100060: codo_001.l_end
+    100062: codo_001.r
+    100064: codo_001.r_end
+    100066: corazon_001.l
+    100068: corazon_001.r
+    100070: corazon_002.l
+    100072: corazon_002.r
+    100074: corazon_003.l
+    100076: corazon_003.l_end
+    100078: corazon_003.r
+    100080: corazon_003.r_end
+    100082: cuello_001
+    100084: cuello_002
+    100086: dragon_001 delante
+    100088: dragon_001 delante_end
+    100090: dragon_001_de
+    100092: dragon_001_de_end
+    100094: dragon_002_de
+    100096: dragon_002_de_end
+    100098: EnlaiMing
+    100100: faldam_001.l
+    100102: faldam_001.l_end
+    100104: faldam_001.r
+    100106: faldam_001.r_end
+    100108: faldam_002.l
+    100110: faldam_002.l_end
+    100112: faldam_002.r
+    100114: faldam_002.r_end
+    100116: Gatillo_001
+    100118: Gatillo_002
+    100120: Gatillo_003
+    100122: Gatillo_003_end
+    100124: hombro_001.l
+    100126: hombro_001.r
+    100128: indice_001.l
+    100130: indice_001.r
+    100132: indice_002.l
+    100134: indice_002.r
+    100136: indice_003.l
+    100138: indice_003.l_end
+    100140: indice_003.r
+    100142: indice_003.r_end
+    100144: manga_down.l
+    100146: manga_down.l_end
+    100148: manga_down.r
+    100150: manga_down.r_end
+    100152: manga_down_001.l
+    100154: manga_down_001.l_end
+    100156: manga_down_001.r
+    100158: manga_down_001.r_end
+    100160: mangamano_001.l
+    100162: mangamano_001.l_end
+    100164: mangamano_001.r
+    100166: mangamano_001.r_end
+    100168: "me\xF1ique_001.l"
+    100170: "me\xF1ique_001.r"
+    100172: "me\xF1ique_002.l"
+    100174: "me\xF1ique_002.r"
+    100176: "me\xF1ique_003.l"
+    100178: "me\xF1ique_003.l_end"
+    100180: "me\xF1ique_003.r"
+    100182: "me\xF1ique_003.r_end"
+    100184: muslo_001.l
+    100186: muslo_001.r
+    100188: "mu\xF1eca_001.l"
+    100190: "mu\xF1eca_001.r"
+    100192: oreja dragon_001.l
+    100194: oreja dragon_001.r
+    100196: oreja dragon_002.l
+    100198: oreja dragon_002.l_end
+    100200: oreja dragon_002.r
+    100202: oreja dragon_002.r_end
+    100204: Pecho_001
+    100206: pelillo_001.r
+    100208: pelillo_001.r_end
+    100210: pelillo_002.r
+    100212: pelillo_002.r_end
+    100214: pelobajo_oreja_001.l
+    100216: pelobajo_oreja_001.l.001
+    100218: pelobajo_oreja_002.l
+    100220: pelobajo_oreja_002.l.001
+    100222: pelobajo_oreja_002.l.001_end
+    100224: pelobajo_oreja_002.l_end
+    100226: personaje
+    100228: pie_001.l
+    100230: pie_001.r
+    100232: pie_001_IK.l
+    100234: pie_001_IK.l_end
+    100236: pie_001_IK.r
+    100238: pie_001_IK.r_end
+    100240: pie_002.l
+    100242: pie_002.r
+    100244: pie_003.l
+    100246: pie_003.r
+    100248: pie_004.l
+    100250: pie_004.l_end
+    100252: pie_004.r
+    100254: pie_004.r_end
+    100256: pierna_001.l
+    100258: pierna_001.r
+    100260: pulgar_001.l
+    100262: pulgar_001.r
+    100264: pulgar_002.l
+    100266: pulgar_002.l_end
+    100268: pulgar_002.r
+    100270: pulgar_002.r_end
+    100272: rizo_001.r
+    100274: rizo_001.r_end
+    100276: rizo_002.l
+    100278: rodilla_001.l
+    100280: rodilla_001.l_end
+    100282: rodilla_001.r
+    100284: rodilla_001.r_end
+    100286: root
+    400000: Abdomen_002
+    400002: Ala.l
+    400004: Ala.l_end
+    400006: Ala.r
+    400008: Ala.r_end
+    400010: //RootNode
+    400012: anular_001.l
+    400014: anular_001.r
+    400016: anular_002.l
+    400018: anular_002.r
+    400020: anular_003.l
+    400022: anular_003.l_end
+    400024: anular_003.r
+    400026: anular_003.r_end
+    400028: Arma EnlaiMing
+    400030: Arma_001
+    400032: Bone.012
+    400034: Bone.013
+    400036: Bone.016
+    400038: Bone.017
+    400040: Bone.018
+    400042: Bone.018_end
+    400044: brazo_002.l
+    400046: brazo_002.r
+    400048: 'BrazoDerecho EnlaiMing '
+    400050: 'BrazoIzquierdo EnlaiMing '
+    400052: cabeza_001
+    400054: CabezaElemento
+    400056: Caderas_003
+    400058: codo_001.l
+    400060: codo_001.l_end
+    400062: codo_001.r
+    400064: codo_001.r_end
+    400066: corazon_001.l
+    400068: corazon_001.r
+    400070: corazon_002.l
+    400072: corazon_002.r
+    400074: corazon_003.l
+    400076: corazon_003.l_end
+    400078: corazon_003.r
+    400080: corazon_003.r_end
+    400082: cuello_001
+    400084: cuello_002
+    400086: dragon_001 delante
+    400088: dragon_001 delante_end
+    400090: dragon_001_de
+    400092: dragon_001_de_end
+    400094: dragon_002_de
+    400096: dragon_002_de_end
+    400098: EnlaiMing
+    400100: faldam_001.l
+    400102: faldam_001.l_end
+    400104: faldam_001.r
+    400106: faldam_001.r_end
+    400108: faldam_002.l
+    400110: faldam_002.l_end
+    400112: faldam_002.r
+    400114: faldam_002.r_end
+    400116: Gatillo_001
+    400118: Gatillo_002
+    400120: Gatillo_003
+    400122: Gatillo_003_end
+    400124: hombro_001.l
+    400126: hombro_001.r
+    400128: indice_001.l
+    400130: indice_001.r
+    400132: indice_002.l
+    400134: indice_002.r
+    400136: indice_003.l
+    400138: indice_003.l_end
+    400140: indice_003.r
+    400142: indice_003.r_end
+    400144: manga_down.l
+    400146: manga_down.l_end
+    400148: manga_down.r
+    400150: manga_down.r_end
+    400152: manga_down_001.l
+    400154: manga_down_001.l_end
+    400156: manga_down_001.r
+    400158: manga_down_001.r_end
+    400160: mangamano_001.l
+    400162: mangamano_001.l_end
+    400164: mangamano_001.r
+    400166: mangamano_001.r_end
+    400168: "me\xF1ique_001.l"
+    400170: "me\xF1ique_001.r"
+    400172: "me\xF1ique_002.l"
+    400174: "me\xF1ique_002.r"
+    400176: "me\xF1ique_003.l"
+    400178: "me\xF1ique_003.l_end"
+    400180: "me\xF1ique_003.r"
+    400182: "me\xF1ique_003.r_end"
+    400184: muslo_001.l
+    400186: muslo_001.r
+    400188: "mu\xF1eca_001.l"
+    400190: "mu\xF1eca_001.r"
+    400192: oreja dragon_001.l
+    400194: oreja dragon_001.r
+    400196: oreja dragon_002.l
+    400198: oreja dragon_002.l_end
+    400200: oreja dragon_002.r
+    400202: oreja dragon_002.r_end
+    400204: Pecho_001
+    400206: pelillo_001.r
+    400208: pelillo_001.r_end
+    400210: pelillo_002.r
+    400212: pelillo_002.r_end
+    400214: pelobajo_oreja_001.l
+    400216: pelobajo_oreja_001.l.001
+    400218: pelobajo_oreja_002.l
+    400220: pelobajo_oreja_002.l.001
+    400222: pelobajo_oreja_002.l.001_end
+    400224: pelobajo_oreja_002.l_end
+    400226: personaje
+    400228: pie_001.l
+    400230: pie_001.r
+    400232: pie_001_IK.l
+    400234: pie_001_IK.l_end
+    400236: pie_001_IK.r
+    400238: pie_001_IK.r_end
+    400240: pie_002.l
+    400242: pie_002.r
+    400244: pie_003.l
+    400246: pie_003.r
+    400248: pie_004.l
+    400250: pie_004.l_end
+    400252: pie_004.r
+    400254: pie_004.r_end
+    400256: pierna_001.l
+    400258: pierna_001.r
+    400260: pulgar_001.l
+    400262: pulgar_001.r
+    400264: pulgar_002.l
+    400266: pulgar_002.l_end
+    400268: pulgar_002.r
+    400270: pulgar_002.r_end
+    400272: rizo_001.r
+    400274: rizo_001.r_end
+    400276: rizo_002.l
+    400278: rodilla_001.l
+    400280: rodilla_001.l_end
+    400282: rodilla_001.r
+    400284: rodilla_001.r_end
+    400286: root
+    4300000: 'BrazoDerecho EnlaiMing '
+    4300002: 'BrazoIzquierdo EnlaiMing '
+    4300004: Arma EnlaiMing
+    4300006: personaje
+    7400000: EnlaiMing|Andar
+    7400002: EnlaiMing|Correr
+    7400004: EnlaiMing|Damage
+    7400006: EnlaiMing|Disparar
+    7400008: EnlaiMing|Habilidad especial
+    7400010: EnlaiMing|Idle
+    7400012: EnlaiMing|Morir
+    7400014: EnlaiMing|Salto
+    9500000: //RootNode
+    13700000: Arma EnlaiMing
+    13700002: 'BrazoDerecho EnlaiMing '
+    13700004: 'BrazoIzquierdo EnlaiMing '
+    13700006: personaje
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

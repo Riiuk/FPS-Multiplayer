@@ -1,0 +1,1079 @@
+fileFormatVersion: 2
+guid: bb294fa245d8fc745bf9387dcaccabbd
+timeCreated: 1516879293
+licenseType: Free
+ModelImporter:
+  serializedVersion: 21
+  fileIDToRecycleName:
+    100000: Armature
+    100002: BASE
+    100004: BRAZO_01_L
+    100006: BRAZO_01_R
+    100008: BRAZO_02_L
+    100010: BRAZO_02_R
+    100012: BRAZO_L_IK
+    100014: BRAZO_L_IK_end
+    100016: BRAZO_R_IK
+    100018: BRAZO_R_IK_end
+    100020: BRAZOS
+    100022: CABEZA
+    100024: CABEZA_end
+    100026: CADERA
+    100028: //RootNode
+    100030: CUELLO
+    100032: CUERPO
+    100034: DEDOS_01_R
+    100036: DEDOS_02_R
+    100038: DEDOS_02_R_end
+    100040: DEDOS_MANO_01_L
+    100042: DEDOS_MANO_02_L
+    100044: DEDOS_MANO_02_L_end
+    100046: DEDOS_PIE_L
+    100048: DEDOS_PIE_L_end
+    100050: DEDOS_PIE_R
+    100052: DEDOS_PIE_R_end
+    100054: GATILLO
+    100056: GATILLO_end
+    100058: GEMELO_L
+    100060: GEMELO_R
+    100062: GRANADAS
+    100064: GRANADAS_end
+    100066: INDICE_01_R
+    100068: INDICE_02_R
+    100070: INDICE_02_R_end
+    100072: LANZAGRANADAS
+    100074: LANZAGRANADAS 1
+    100076: MANO_L
+    100078: MANO_R
+    100080: MOCHILA
+    100082: MOCHILA_end
+    100084: MOCHILA_L
+    100086: MOCHILA_L_end
+    100088: MOCHILA_R
+    100090: MOCHILA_R_end
+    100092: MUSLO_L
+    100094: MUSLO_R
+    100096: ORIENTACION_CODO_L
+    100098: ORIENTACION_CODO_L_end
+    100100: ORIENTACION_CODO_R
+    100102: ORIENTACION_CODO_R_end
+    100104: ORIENTACION_RODILLA_L
+    100106: ORIENTACION_RODILLA_L_end
+    100108: ORIENTACION_RODILLA_R
+    100110: ORIENTACION_RODILLA_R_end
+    100112: PECHO
+    100114: PIE_L
+    100116: PIE_L._IK
+    100118: PIE_L._IK_end
+    100120: PIE_R
+    100122: PIE_R_IK
+    100124: PIE_R_IK_end
+    100126: PULGAR_01_L
+    100128: PULGAR_01_R
+    100130: PULGAR_02_L
+    100132: PULGAR_02_L_end
+    100134: PULGAR_02_R
+    100136: PULGAR_02_R_end
+    100138: TRONCO
+    400000: Armature
+    400002: BASE
+    400004: BRAZO_01_L
+    400006: BRAZO_01_R
+    400008: BRAZO_02_L
+    400010: BRAZO_02_R
+    400012: BRAZO_L_IK
+    400014: BRAZO_L_IK_end
+    400016: BRAZO_R_IK
+    400018: BRAZO_R_IK_end
+    400020: BRAZOS
+    400022: CABEZA
+    400024: CABEZA_end
+    400026: CADERA
+    400028: //RootNode
+    400030: CUELLO
+    400032: CUERPO
+    400034: DEDOS_01_R
+    400036: DEDOS_02_R
+    400038: DEDOS_02_R_end
+    400040: DEDOS_MANO_01_L
+    400042: DEDOS_MANO_02_L
+    400044: DEDOS_MANO_02_L_end
+    400046: DEDOS_PIE_L
+    400048: DEDOS_PIE_L_end
+    400050: DEDOS_PIE_R
+    400052: DEDOS_PIE_R_end
+    400054: GATILLO
+    400056: GATILLO_end
+    400058: GEMELO_L
+    400060: GEMELO_R
+    400062: GRANADAS
+    400064: GRANADAS_end
+    400066: INDICE_01_R
+    400068: INDICE_02_R
+    400070: INDICE_02_R_end
+    400072: LANZAGRANADAS
+    400074: LANZAGRANADAS 1
+    400076: MANO_L
+    400078: MANO_R
+    400080: MOCHILA
+    400082: MOCHILA_end
+    400084: MOCHILA_L
+    400086: MOCHILA_L_end
+    400088: MOCHILA_R
+    400090: MOCHILA_R_end
+    400092: MUSLO_L
+    400094: MUSLO_R
+    400096: ORIENTACION_CODO_L
+    400098: ORIENTACION_CODO_L_end
+    400100: ORIENTACION_CODO_R
+    400102: ORIENTACION_CODO_R_end
+    400104: ORIENTACION_RODILLA_L
+    400106: ORIENTACION_RODILLA_L_end
+    400108: ORIENTACION_RODILLA_R
+    400110: ORIENTACION_RODILLA_R_end
+    400112: PECHO
+    400114: PIE_L
+    400116: PIE_L._IK
+    400118: PIE_L._IK_end
+    400120: PIE_R
+    400122: PIE_R_IK
+    400124: PIE_R_IK_end
+    400126: PULGAR_01_L
+    400128: PULGAR_01_R
+    400130: PULGAR_02_L
+    400132: PULGAR_02_L_end
+    400134: PULGAR_02_R
+    400136: PULGAR_02_R_end
+    400138: TRONCO
+    4300000: BRAZOS
+    4300002: CUERPO
+    4300004: LANZAGRANADAS
+    7400000: CORRER
+    7400002: Armature|ANDAR
+    7400004: Armature|CORRER
+    7400006: Armature|DISPARAR
+    7400008: Armature|H. ESPECIAL
+    7400010: Armature|IDLE
+    7400012: Armature|MUERTE
+    7400014: "Armature|RECIBIR DA\xD1O"
+    7400016: Armature|SALTO
+    7400018: Armature|CORRER (1)
+    9500000: //RootNode
+    13700000: BRAZOS
+    13700002: CUERPO
+    13700004: LANZAGRANADAS
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: "\nClip 'Armature|ANDAR' has import animation warnings
+      that might lower retargeting quality:\nNote: Activate translation DOF on avatar
+      to improve retargeting quality.\n\t'CADERA' has translation animation that will
+      be discarded.\n\t'CADERA' is inbetween humanoid transforms and has rotation
+      animation that will be discarded.\n\t'BRAZO_01_L' has translation animation
+      that will be discarded.\n\t'BRAZO_01_R' has translation animation that will
+      be discarded.\n\nClip 'Armature|CORRER' has import animation warnings that might
+      lower retargeting quality:\nNote: Activate translation DOF on avatar to improve
+      retargeting quality.\n\t'CADERA' has translation animation that will be discarded.\n\t'CADERA'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\nClip
+      'Armature|DISPARAR' has import animation warnings that might lower retargeting
+      quality:\nNote: Activate translation DOF on avatar to improve retargeting quality.\n\t'CADERA'
+      has translation animation that will be discarded.\n\nClip 'Armature|H. ESPECIAL'
+      has import animation warnings that might lower retargeting quality:\nNote: Activate
+      translation DOF on avatar to improve retargeting quality.\n\t'CADERA' has translation
+      animation that will be discarded.\n\t'CADERA' is inbetween humanoid transforms
+      and has rotation animation that will be discarded.\n\nClip 'Armature|MUERTE'
+      has import animation warnings that might lower retargeting quality:\nNote: Activate
+      translation DOF on avatar to improve retargeting quality.\n\t'CADERA' has translation
+      animation that will be discarded.\n\t'CADERA' is inbetween humanoid transforms
+      and has rotation animation that will be discarded.\n\t'BRAZO_01_R' has translation
+      animation that will be discarded.\n\nClip 'Armature|RECIBIR DA\xD1O' has import
+      animation warnings that might lower retargeting quality:\nNote: Activate translation
+      DOF on avatar to improve retargeting quality.\n\t'CADERA' has translation animation
+      that will be discarded.\n\t'CADERA' is inbetween humanoid transforms and has
+      rotation animation that will be discarded.\n\t'BRAZO_01_R' has translation animation
+      that will be discarded.\n\nClip 'Armature|SALTO' has import animation warnings
+      that might lower retargeting quality:\nNote: Activate translation DOF on avatar
+      to improve retargeting quality.\n\t'CADERA' has translation animation that will
+      be discarded.\n\t'CADERA' is inbetween humanoid transforms and has rotation
+      animation that will be discarded.\n"
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: CORRER
+      takeName: CORRER
+      firstFrame: 0
+      lastFrame: 18
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature|ANDAR
+      takeName: Armature|ANDAR
+      firstFrame: 0
+      lastFrame: 28
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature|CORRER
+      takeName: Armature|CORRER
+      firstFrame: 0
+      lastFrame: 18
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature|DISPARAR
+      takeName: Armature|DISPARAR
+      firstFrame: 0
+      lastFrame: 20
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature|H. ESPECIAL
+      takeName: Armature|H. ESPECIAL
+      firstFrame: 0
+      lastFrame: 47
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature|IDLE
+      takeName: Armature|IDLE
+      firstFrame: 0
+      lastFrame: 39
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature|MUERTE
+      takeName: Armature|MUERTE
+      firstFrame: 0
+      lastFrame: 46
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: "Armature|RECIBIR DA\xD1O"
+      takeName: "Armature|RECIBIR DA\xD1O"
+      firstFrame: 0
+      lastFrame: 25
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature|CORRER (1)
+      takeName: Armature|CORRER
+      firstFrame: 0
+      lastFrame: 18
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human:
+    - boneName: BASE
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: MUSLO_L
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: MUSLO_R
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: GEMELO_L
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: GEMELO_R
+      humanName: RightLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PIE_L
+      humanName: LeftFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PIE_R
+      humanName: RightFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: TRONCO
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PECHO
+      humanName: Chest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: CUELLO
+      humanName: Neck
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: CABEZA
+      humanName: Head
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: BRAZO_01_L
+      humanName: LeftShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: BRAZO_02_L
+      humanName: LeftUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: BRAZO_01_R
+      humanName: RightUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: MANO_L
+      humanName: LeftLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: BRAZO_02_R
+      humanName: RightLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: DEDOS_MANO_01_L
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: MANO_R
+      humanName: RightHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: DEDOS_PIE_L
+      humanName: LeftToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: DEDOS_PIE_R
+      humanName: RightToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: INDICE_01_R
+      humanName: Right Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: INDICE_02_R
+      humanName: Right Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PULGAR_01_R
+      humanName: Right Middle Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PULGAR_02_R
+      humanName: Right Middle Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: DEDOS_01_R
+      humanName: Right Little Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: DEDOS_02_R
+      humanName: Right Little Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: JUMPERMod_Anim(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Armature
+      parentName: JUMPERMod_Anim(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 27.97032, y: 27.97032, z: 27.97032}
+    - name: BASE
+      parentName: Armature
+      position: {x: -0.0015357621, y: 0.0052898545, z: 0.0025712252}
+      rotation: {x: 1, y: -2.8421713e-14, z: 0.0000004331258, w: -0.00000014901163}
+      scale: {x: 0.9999998, y: 0.99999803, z: 0.99999803}
+    - name: CADERA
+      parentName: BASE
+      position: {x: 0.0015357954, y: 0.006498177, z: -0.038149618}
+      rotation: {x: 0.7949224, y: -0.00000033592218, z: 0.00000025219322, w: 0.6067111}
+      scale: {x: 0.9999998, y: 1.0000012, z: 1.0000012}
+    - name: MUSLO_L
+      parentName: CADERA
+      position: {x: -0.003637219, y: 0.0052363193, z: -0.00057087466}
+      rotation: {x: -0.1617895, y: 0.0015068317, z: 0.036957376, w: 0.98613185}
+      scale: {x: 1.0000011, y: 1.0000026, z: 1.0000014}
+    - name: GEMELO_L
+      parentName: MUSLO_L
+      position: {x: 9.313225e-11, y: 0.013915424, z: 3.5390257e-10}
+      rotation: {x: 0.106571965, y: 0.0005555959, z: -0.03698388, w: 0.99361676}
+      scale: {x: 0.9999998, y: 1.0000008, z: 1.000001}
+    - name: PIE_L
+      parentName: GEMELO_L
+      position: {x: 2.2351741e-10, y: 0.017999252, z: -0.000000001490116}
+      rotation: {x: 0.000000100350015, y: 0.8570707, z: -0.51519895, w: -0.0000001761364}
+      scale: {x: 1.000002, y: 1.0000015, z: 1.0000023}
+    - name: DEDOS_PIE_L
+      parentName: PIE_L
+      position: {x: 5.5879353e-11, y: 0.0047456934, z: -6.426126e-10}
+      rotation: {x: 0.31634298, y: -0.00000020078245, z: 0.00000007463314, w: 0.9486449}
+      scale: {x: 1.0000033, y: 1.0000011, z: 0.99999917}
+    - name: DEDOS_PIE_L_end
+      parentName: DEDOS_PIE_L
+      position: {x: -0, y: 0.0032088875, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: MUSLO_R
+      parentName: CADERA
+      position: {x: 0.003637219, y: 0.005236321, z: -0.0005708778}
+      rotation: {x: -0.1619582, y: -0.0060541267, z: -0.036210876, w: 0.9861145}
+      scale: {x: 1.0000006, y: 1.0000018, z: 1.000001}
+    - name: GEMELO_R
+      parentName: MUSLO_R
+      position: {x: -0, y: 0.013915428, z: -0.0000000028312206}
+      rotation: {x: 0.106741264, y: 0.0040264553, z: 0.036492053, w: 0.9936088}
+      scale: {x: 1.0000001, y: 1.0000026, z: 1.000003}
+    - name: PIE_R
+      parentName: GEMELO_R
+      position: {x: 8.381903e-10, y: 0.017999256, z: -2.9802322e-10}
+      rotation: {x: 0.000000086030916, y: 0.8570706, z: -0.5151989, w: -0.00000018370335}
+      scale: {x: 1.0000005, y: 0.99999917, z: 0.9999988}
+    - name: DEDOS_PIE_R
+      parentName: PIE_R
+      position: {x: 1.11758706e-10, y: 0.0047456915, z: -2.2351741e-10}
+      rotation: {x: 0.3163431, y: -0.00000019854332, z: 0.00000006666492, w: 0.9486449}
+      scale: {x: 1.0000004, y: 1, z: 0.9999995}
+    - name: DEDOS_PIE_R_end
+      parentName: DEDOS_PIE_R
+      position: {x: -0, y: 0.0032088875, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: TRONCO
+      parentName: CADERA
+      position: {x: 2.0335676e-10, y: -0.0000000011827797, z: 0.0000000013364478}
+      rotation: {x: -0.9915153, y: -0.00000000272631, z: 0.00000023518713, w: -0.12999047}
+      scale: {x: 1.0000001, y: 1.0000007, z: 0.9999991}
+    - name: PECHO
+      parentName: TRONCO
+      position: {x: -4.3795295e-10, y: 0.0059620384, z: -2.1187588e-10}
+      rotation: {x: -0.035795506, y: -8.466262e-10, z: 0.000000013697201, w: 0.99935913}
+      scale: {x: 0.9999997, y: 0.9999995, z: 0.99999917}
+    - name: CUELLO
+      parentName: PECHO
+      position: {x: -1.618173e-10, y: 0.0060701943, z: -5.296897e-11}
+      rotation: {x: -0.23636024, y: 0.0032493786, z: 0.01162554, w: 0.9715905}
+      scale: {x: 1.0000005, y: 1.0000008, z: 1.0000005}
+    - name: CABEZA
+      parentName: CUELLO
+      position: {x: -9.976793e-10, y: 0.0023586717, z: 0.0000000024959443}
+      rotation: {x: 0.39699486, y: -0.00000011306488, z: -0.00000006676145, w: 0.9178209}
+      scale: {x: 0.9999993, y: 0.9999973, z: 1.0000021}
+    - name: CABEZA_end
+      parentName: CABEZA
+      position: {x: -0, y: 0.0069025396, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: BRAZO_01_L
+      parentName: PECHO
+      position: {x: -0.0038274585, y: 0.0052504884, z: -0.0011608164}
+      rotation: {x: 0.5951062, y: -0.32715163, z: -0.6170342, w: -0.39760447}
+      scale: {x: 1.0000023, y: 1.000003, z: 1.0000018}
+    - name: BRAZO_02_L
+      parentName: BRAZO_01_L
+      position: {x: 0.000000002682209, y: 0.009025822, z: -2.9802322e-10}
+      rotation: {x: 0.07199032, y: 0.70820165, z: 0.103121676, w: 0.69471854}
+      scale: {x: 1.0000002, y: 1.0000005, z: 1.000003}
+    - name: MANO_L
+      parentName: BRAZO_02_L
+      position: {x: 0.0000000025331974, y: 0.011021118, z: 5.9604643e-10}
+      rotation: {x: 0.07246023, y: -0.7074629, z: -0.0015314211, w: 0.7030245}
+      scale: {x: 1.0000014, y: 1.0000014, z: 1.0000012}
+    - name: DEDOS_MANO_01_L
+      parentName: MANO_L
+      position: {x: 0.000000001490116, y: 0.0022753568, z: 0.0000000025331974}
+      rotation: {x: -0.052490607, y: 0.000000029802319, z: 0.0000000074505797, w: 0.99862146}
+      scale: {x: 1.0000005, y: 1.0000015, z: 1.0000014}
+    - name: DEDOS_MANO_02_L
+      parentName: DEDOS_MANO_01_L
+      position: {x: 7.0780515e-10, y: 0.0023396644, z: 0}
+      rotation: {x: -0.101351514, y: -0.000000055525454, z: -0.000000061861336, w: 0.9948507}
+      scale: {x: 1.0000014, y: 1.0000012, z: 1.0000008}
+    - name: DEDOS_MANO_02_L_end
+      parentName: DEDOS_MANO_02_L
+      position: {x: -0, y: 0.001175816, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PULGAR_01_L
+      parentName: MANO_L
+      position: {x: -0.00059183105, y: 0.002387695, z: -0.0017400411}
+      rotation: {x: 0.051902052, y: -0.007842152, z: -0.1492033, w: -0.9874124}
+      scale: {x: 1.0000019, y: 1.0000033, z: 1.0000019}
+    - name: PULGAR_02_L
+      parentName: PULGAR_01_L
+      position: {x: -0, y: 0.001328185, z: -0.0000000011920929}
+      rotation: {x: -0.08563413, y: -0.68222004, z: 0.26970762, w: -0.6741666}
+      scale: {x: 1.0000002, y: 0.99999976, z: 1.0000019}
+    - name: PULGAR_02_L_end
+      parentName: PULGAR_02_L
+      position: {x: -0, y: 0.001145063, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: BRAZO_01_R
+      parentName: PECHO
+      position: {x: 0.0043544793, y: 0.00530842, z: -0.001145697}
+      rotation: {x: 0.4305647, y: 0.5193137, z: 0.4881628, w: -0.5537367}
+      scale: {x: 1.0000035, y: 1.0000035, z: 1.0000024}
+    - name: BRAZO_02_R
+      parentName: BRAZO_01_R
+      position: {x: 0.000000002682209, y: 0.009057534, z: 0.0000000032782554}
+      rotation: {x: -0.018778238, y: -0.7067529, z: -0.03736201, w: 0.7062237}
+      scale: {x: 1.0000004, y: 1.0000021, z: 1.0000019}
+    - name: MANO_R
+      parentName: BRAZO_02_R
+      position: {x: -0.000000002235174, y: 0.010809951, z: 0.0000000011920929}
+      rotation: {x: 0.0712808, y: 0.009095639, z: -0.07202545, w: 0.9948109}
+      scale: {x: 1.0000002, y: 1.000002, z: 1.0000025}
+    - name: DEDOS_01_R
+      parentName: MANO_R
+      position: {x: -0.00050915027, y: 0.0023212347, z: 0.00096804585}
+      rotation: {x: -0.18993996, y: -0.012499523, z: 0.10090188, w: 0.976517}
+      scale: {x: 0.9999989, y: 1.0000007, z: 1.0000018}
+    - name: DEDOS_02_R
+      parentName: DEDOS_01_R
+      position: {x: 7.45058e-10, y: 0.0022014978, z: 0.0000000012363307}
+      rotation: {x: 0.00000041723246, y: 0.000000020489095, z: 0.03943421, w: 0.99922216}
+      scale: {x: 1.0000006, y: 0.9999988, z: 0.99999917}
+    - name: DEDOS_02_R_end
+      parentName: DEDOS_02_R
+      position: {x: -0, y: 0.0015678369, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: INDICE_01_R
+      parentName: MANO_R
+      position: {x: 0.00032325662, y: 0.0022071004, z: -0.0004491423}
+      rotation: {x: -0.18994077, y: -0.012499678, z: 0.10090179, w: 0.97651684}
+      scale: {x: 0.99999976, y: 1.0000025, z: 1.0000036}
+    - name: INDICE_02_R
+      parentName: INDICE_01_R
+      position: {x: -7.45058e-10, y: 0.002201496, z: 5.9604643e-10}
+      rotation: {x: 0.0000009685753, y: 0.000000029802315, z: 0.039435726, w: 0.9992221}
+      scale: {x: 1.000001, y: 1.0000008, z: 1.0000026}
+    - name: INDICE_02_R_end
+      parentName: INDICE_02_R
+      position: {x: -0, y: 0.0015678369, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PULGAR_01_R
+      parentName: MANO_R
+      position: {x: -0.0004635509, y: 0.0017287662, z: -0.0010301473}
+      rotation: {x: -0.18024597, y: -0.022286886, z: 0.13589095, w: 0.9739345}
+      scale: {x: 1.0000007, y: 1.0000006, z: 1.0000021}
+    - name: PULGAR_02_R
+      parentName: PULGAR_01_R
+      position: {x: 7.45058e-10, y: 0.0016511511, z: -0.0000000022724271}
+      rotation: {x: 0.033255134, y: -0.0015847863, z: -0.010077719, w: 0.99939483}
+      scale: {x: 1.0000007, y: 1.0000032, z: 1.0000037}
+    - name: PULGAR_02_R_end
+      parentName: PULGAR_02_R
+      position: {x: -0, y: 0.0010781338, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: MOCHILA
+      parentName: PECHO
+      position: {x: -9.790528e-10, y: -0.00032978284, z: -0.004130141}
+      rotation: {x: -0.09508848, y: 0.000000119121125, z: 0.000000016219001, w: 0.9954689}
+      scale: {x: 1.0000004, y: 1.0000005, z: 1.0000001}
+    - name: MOCHILA_end
+      parentName: MOCHILA
+      position: {x: -0, y: 0.0052991, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: MOCHILA_L
+      parentName: PECHO
+      position: {x: -0.001629357, y: 0.0016196398, z: 0.0042974325}
+      rotation: {x: -0.066028185, y: -0.10578384, z: 0.6728852, w: 0.72916096}
+      scale: {x: 1.000002, y: 1.0000017, z: 0.99999976}
+    - name: MOCHILA_L_end
+      parentName: MOCHILA_L
+      position: {x: -0, y: 0.002908345, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: MOCHILA_R
+      parentName: PECHO
+      position: {x: 0.0023730467, y: 0.0016558327, z: 0.0042909677}
+      rotation: {x: 0.61247, y: 0.64080244, z: 0.117698066, w: -0.44766057}
+      scale: {x: 1.0000023, y: 1.0000025, z: 1.0000044}
+    - name: MOCHILA_R_end
+      parentName: MOCHILA_R
+      position: {x: -0, y: 0.002908345, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: GRANADAS
+      parentName: BASE
+      position: {x: -0.0064863674, y: 0.005268045, z: -0.034122504}
+      rotation: {x: -0.6916835, y: -0.14688104, z: -0.1468811, w: 0.69168335}
+      scale: {x: 1, y: 1.0000006, z: 1.0000005}
+    - name: GRANADAS_end
+      parentName: GRANADAS
+      position: {x: -0, y: 0.0038964988, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ORIENTACION_RODILLA_R
+      parentName: BASE
+      position: {x: 0.00074296264, y: 0.026126925, z: -0.022037849}
+      rotation: {x: -0, y: -0.00000015099586, z: -5.921574e-15, w: 1}
+      scale: {x: 0.99999994, y: 0.9999993, z: 0.9999993}
+    - name: ORIENTACION_RODILLA_R_end
+      parentName: ORIENTACION_RODILLA_R
+      position: {x: -0, y: 0.0020498014, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ORIENTACION_RODILLA_L
+      parentName: BASE
+      position: {x: -0.0013572096, y: 0.026126925, z: -0.022037854}
+      rotation: {x: -0, y: -0.000000031786616, z: 1.894743e-14, w: 1}
+      scale: {x: 0.99999994, y: 0.9999993, z: 0.9999993}
+    - name: ORIENTACION_RODILLA_L_end
+      parentName: ORIENTACION_RODILLA_L
+      position: {x: -0, y: 0.0020498014, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ORIENTACION_CODO_R
+      parentName: BASE
+      position: {x: 0.01345418, y: -0.010956977, z: -0.045786247}
+      rotation: {x: -0.70710593, y: 0.000000013842054, z: -0.7071076, w: 0.00000001384227}
+      scale: {x: 0.9999994, y: 0.9999997, z: 0.99999887}
+    - name: ORIENTACION_CODO_R_end
+      parentName: ORIENTACION_CODO_R
+      position: {x: -0, y: 0.0020498014, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ORIENTACION_CODO_L
+      parentName: BASE
+      position: {x: -0.016918283, y: -0.008457635, z: -0.047654256}
+      rotation: {x: -0.70710593, y: 0.000000013842054, z: -0.7071076, w: 0.00000001384227}
+      scale: {x: 0.9999994, y: 0.9999997, z: 0.99999887}
+    - name: ORIENTACION_CODO_L_end
+      parentName: ORIENTACION_CODO_L
+      position: {x: -0, y: 0.0020498014, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: BRAZO_L_IK
+      parentName: BASE
+      position: {x: -0.003947466, y: 0.018356496, z: -0.039236534}
+      rotation: {x: -1, y: -7.235468e-15, z: -0.0000004331258, w: 1.2510231e-20}
+      scale: {x: 0.99999994, y: 0.9999993, z: 0.9999993}
+    - name: BRAZO_L_IK_end
+      parentName: BRAZO_L_IK
+      position: {x: -0, y: 0.00249149, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: BRAZO_R_IK
+      parentName: BASE
+      position: {x: 0.0075389007, y: 0.006589008, z: -0.03925859}
+      rotation: {x: -1, y: -7.235468e-15, z: -0.0000004331258, w: 1.2510231e-20}
+      scale: {x: 0.99999994, y: 0.9999993, z: 0.9999993}
+    - name: BRAZO_R_IK_end
+      parentName: BRAZO_R_IK
+      position: {x: -0, y: 0.002397919, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PIE_L._IK
+      parentName: BASE
+      position: {x: -0.0018372594, y: -0.008461694, z: -0.00562525}
+      rotation: {x: -0.00000021287876, y: 0.9486449, z: 0.3163431, w: 0.00000018704709}
+      scale: {x: 1.0000013, y: 1.0000023, z: 1.0000012}
+    - name: PIE_L._IK_end
+      parentName: PIE_L._IK
+      position: {x: -0, y: 0.0047456915, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PIE_R_IK
+      parentName: BASE
+      position: {x: 0.002950773, y: 0.016161337, z: -0.004263002}
+      rotation: {x: -0.00000020471337, y: 0.94864494, z: 0.316343, w: 0.00000018656782}
+      scale: {x: 1.0000012, y: 1.0000008, z: 1.0000017}
+    - name: PIE_R_IK_end
+      parentName: PIE_R_IK
+      position: {x: -0, y: 0.0047456915, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LANZAGRANADAS 1
+      parentName: BASE
+      position: {x: 0.004055654, y: 0.015128453, z: -0.03756279}
+      rotation: {x: -0, y: -0.0000001536509, z: 2.289577e-14, w: 1}
+      scale: {x: 0.9999999, y: 0.9999996, z: 0.9999991}
+    - name: GATILLO
+      parentName: LANZAGRANADAS 1
+      position: {x: -5.9604643e-10, y: -0.004895884, z: 0.00010832492}
+      rotation: {x: 0.36260524, y: 0.0000007170086, z: 0.0000004772524, w: 0.9319429}
+      scale: {x: 1.0000001, y: 1.0000015, z: 1.0000017}
+    - name: GATILLO_end
+      parentName: GATILLO
+      position: {x: -0, y: 0.0010333292, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: BRAZOS
+      parentName: JUMPERMod_Anim(Clone)
+      position: {x: -0.009298873, y: 0, z: 0}
+      rotation: {x: 0.00000008146034, y: 0, z: -0, w: 1}
+      scale: {x: 13.398697, y: 13.398697, z: 13.398697}
+    - name: CUERPO
+      parentName: JUMPERMod_Anim(Clone)
+      position: {x: -0.009298873, y: 0, z: 0}
+      rotation: {x: 0.00000008146034, y: 0, z: -0, w: 1}
+      scale: {x: 13.398697, y: 13.398697, z: 13.398697}
+    - name: LANZAGRANADAS
+      parentName: JUMPERMod_Anim(Clone)
+      position: {x: -0.0020152696, y: 1.101045, z: 0.58402425}
+      rotation: {x: 0.00000008146035, y: 0, z: -0, w: 1}
+      scale: {x: 5.88814, y: 5.88814, z: 5.88814}
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 3
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

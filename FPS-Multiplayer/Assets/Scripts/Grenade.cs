@@ -1,8 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Networking;
 
-public class Grenade : MonoBehaviour {
+public class Grenade : NetworkBehaviour {
 
     [Header("Tiempo atras de explosión")]
     [Tooltip("Delay que aplicamos antes de llamar a la explosión")]

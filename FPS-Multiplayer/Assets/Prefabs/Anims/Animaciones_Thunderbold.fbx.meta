@@ -1,0 +1,256 @@
+fileFormatVersion: 2
+guid: 8222588b3598cc543a05d85df87b44aa
+timeCreated: 1516880294
+licenseType: Free
+ModelImporter:
+  serializedVersion: 21
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: BASE
+    100004: Brazo_Left_1
+    100006: Brazo_Left_2
+    100008: Brazo_Left_3
+    100010: Brazo_Left_IK
+    100012: Brazo_Left_IK_end
+    100014: Brazo_Right_1
+    100016: Brazo_Right_2
+    100018: Brazo_Right_3
+    100020: Brazo_Right_IK
+    100022: Brazo_Right_IK_end
+    100024: Cabeza
+    100026: Cabeza_end
+    100028: Camera
+    100030: Cintura
+    100032: "C\xEDrculo.005"
+    100034: Dedo_Left_1
+    100036: Dedo_Left_10
+    100038: Dedo_Left_11
+    100040: Dedo_Left_11_end
+    100042: Dedo_Left_12
+    100044: Dedo_Left_13
+    100046: Dedo_Left_13_end
+    100048: Dedo_Left_2
+    100050: Dedo_Left_2_end
+    100052: Dedo_Left_3
+    100054: Dedo_Left_4
+    100056: Dedo_Left_5
+    100058: Dedo_Left_5_end
+    100060: Dedo_Left_6
+    100062: Dedo_Left_7
+    100064: Dedo_Left_8
+    100066: Dedo_Left_8_end
+    100068: Dedo_Left_9
+    100070: Dedo_Right_1
+    100072: Dedo_Right_10
+    100074: Dedo_Right_11
+    100076: Dedo_Right_11_end
+    100078: Dedo_Right_12
+    100080: Dedo_Right_13
+    100082: Dedo_Right_13_end
+    100084: Dedo_Right_2
+    100086: Dedo_Right_2_end
+    100088: Dedo_Right_3
+    100090: Dedo_Right_4
+    100092: Dedo_Right_5
+    100094: Dedo_Right_5_end
+    100096: Dedo_Right_6
+    100098: Dedo_Right_7
+    100100: Dedo_Right_8
+    100102: Dedo_Right_8_end
+    100104: Dedo_Right_9
+    100106: Esqueleto
+    100108: Lamp
+    100110: Pie_Left
+    100112: Pie_Left_end
+    100114: Pie_Right
+    100116: Pie_Right_end
+    100118: Pie_Right_IK
+    100120: Pie_Right_IK_end
+    100122: Pierna_Left_1
+    100124: Pierna_Left_2
+    100126: Pierna_Left_3
+    100128: Pierna_Left_IK
+    100130: Pierna_Left_IK_end
+    100132: Pierna_Right_1
+    100134: Pierna_Right_2
+    100136: Plano
+    100138: Rotacion_Brazo_Left
+    100140: Rotacion_Brazo_Left_end
+    100142: Rotacion_Brazo_Right
+    100144: Rotacion_Brazo_Right_end
+    100146: Rotacion_Pierna_Left_IK
+    100148: Rotacion_Pierna_Left_IK_end
+    100150: Rotacion_Pierna_Right_IK
+    100152: Rotacion_Pierna_Right_IK_end
+    100154: Torso
+    100156: Tronco
+    400000: //RootNode
+    400002: BASE
+    400004: Brazo_Left_1
+    400006: Brazo_Left_2
+    400008: Brazo_Left_3
+    400010: Brazo_Left_IK
+    400012: Brazo_Left_IK_end
+    400014: Brazo_Right_1
+    400016: Brazo_Right_2
+    400018: Brazo_Right_3
+    400020: Brazo_Right_IK
+    400022: Brazo_Right_IK_end
+    400024: Cabeza
+    400026: Cabeza_end
+    400028: Camera
+    400030: Cintura
+    400032: "C\xEDrculo.005"
+    400034: Dedo_Left_1
+    400036: Dedo_Left_10
+    400038: Dedo_Left_11
+    400040: Dedo_Left_11_end
+    400042: Dedo_Left_12
+    400044: Dedo_Left_13
+    400046: Dedo_Left_13_end
+    400048: Dedo_Left_2
+    400050: Dedo_Left_2_end
+    400052: Dedo_Left_3
+    400054: Dedo_Left_4
+    400056: Dedo_Left_5
+    400058: Dedo_Left_5_end
+    400060: Dedo_Left_6
+    400062: Dedo_Left_7
+    400064: Dedo_Left_8
+    400066: Dedo_Left_8_end
+    400068: Dedo_Left_9
+    400070: Dedo_Right_1
+    400072: Dedo_Right_10
+    400074: Dedo_Right_11
+    400076: Dedo_Right_11_end
+    400078: Dedo_Right_12
+    400080: Dedo_Right_13
+    400082: Dedo_Right_13_end
+    400084: Dedo_Right_2
+    400086: Dedo_Right_2_end
+    400088: Dedo_Right_3
+    400090: Dedo_Right_4
+    400092: Dedo_Right_5
+    400094: Dedo_Right_5_end
+    400096: Dedo_Right_6
+    400098: Dedo_Right_7
+    400100: Dedo_Right_8
+    400102: Dedo_Right_8_end
+    400104: Dedo_Right_9
+    400106: Esqueleto
+    400108: Lamp
+    400110: Pie_Left
+    400112: Pie_Left_end
+    400114: Pie_Right
+    400116: Pie_Right_end
+    400118: Pie_Right_IK
+    400120: Pie_Right_IK_end
+    400122: Pierna_Left_1
+    400124: Pierna_Left_2
+    400126: Pierna_Left_3
+    400128: Pierna_Left_IK
+    400130: Pierna_Left_IK_end
+    400132: Pierna_Right_1
+    400134: Pierna_Right_2
+    400136: Plano
+    400138: Rotacion_Brazo_Left
+    400140: Rotacion_Brazo_Left_end
+    400142: Rotacion_Brazo_Right
+    400144: Rotacion_Brazo_Right_end
+    400146: Rotacion_Pierna_Left_IK
+    400148: Rotacion_Pierna_Left_IK_end
+    400150: Rotacion_Pierna_Right_IK
+    400152: Rotacion_Pierna_Right_IK_end
+    400154: Torso
+    400156: Tronco
+    2000000: Camera
+    2300000: Plano
+    3300000: Plano
+    4300000: Plano
+    4300002: "C\xEDrculo.005"
+    7400000: Esqueleto|Andar
+    7400002: Esqueleto|Correr
+    7400004: Esqueleto|Disparar
+    7400006: Esqueleto|Especial
+    7400008: Esqueleto|Idle
+    7400010: Esqueleto|Muerte
+    7400012: "Esqueleto|Recibir Da\xF1o"
+    7400014: Esqueleto|Salto
+    9500000: //RootNode
+    10800000: Lamp
+    13700000: "C\xEDrculo.005"
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

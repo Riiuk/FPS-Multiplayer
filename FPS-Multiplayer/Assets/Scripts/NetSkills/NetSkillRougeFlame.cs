@@ -28,14 +28,12 @@ public class NetSkillRougeFlame : NetworkBehaviour
     private float coolDownTimer;
 
 
-    private NetFPSController netFPSController;
     private NetWeaponShoot netWeaponShoot;
     private NetPlayerHealth netPlayerHealth;
 
 
     void Start()
     {
-        netFPSController = GetComponent<NetFPSController>();
         netWeaponShoot = GetComponentInChildren<NetWeaponShoot>();
         netPlayerHealth = GetComponent<NetPlayerHealth>();
     }
